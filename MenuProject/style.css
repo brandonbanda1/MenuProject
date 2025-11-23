@@ -1,0 +1,163 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e5e5e5;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+/* iPhone frame */
+.iphone-frame {
+    width: 390px;
+    background: #fafafa;
+    border-radius: 40px;
+    border: 8px solid black;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Dynamic Island */
+.dynamic-island {
+    width: 120px;
+    height: 34px;
+    background: black;
+    border-radius: 30px;
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 15;
+}
+
+/* STATUS BAR */
+.status-bar {
+    height: 40px;
+    margin-top: 5px;
+    padding: 0 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: #000;
+    position: relative;
+}
+
+.sb-right {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Battery */
+.battery {
+    width: 24px;
+    height: 10px;
+    border: 2px solid #000;
+    border-radius: 2px;
+    position: relative;
+}
+.battery::after {
+    content: "";
+    position: absolute;
+    right: -4px;
+    top: 2px;
+    width: 3px;
+    height: 6px;
+    background: #000;
+    border-radius: 1px;
+}
+.battery-level {
+    height: 100%;
+    width: 70%;
+    background: #000;
+}
+
+/* TOP NAV BAR */
+.topbar {
+    background: linear-gradient(to right, #fe6a2c, #ff8a34);
+    padding: 16px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar h1 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* TABS */
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+    padding: 15px 0 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.tab {
+    color: #777;
+    padding-bottom: 6px;
+    font-size: 14px;
+}
+
+.tab.active {
+    color: #ff5533;
+    border-bottom: 2px solid #ff5533;
+    font-weight: 600;
+}
+
+/* MENU SECTIONS */
+.menu-section {
+    padding: 20px;
+}
+
+.menu-section h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* ITEM CARD */
+.item {
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.06);
+}
+
+.item img {
+    width: 75px;
+    height: 75px;
+    border-radius: 8px;
+    margin-right: 14px;
+    object-fit: cover;
+}
+
+.info h3 {
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.info p {
+    font-size: 12px;
+    color: #777;
+}
+
+.price {
+    font-size: 14px;
+    color: #ff5533;
+    font-weight: 600;
+    margin-left: auto;
+}
